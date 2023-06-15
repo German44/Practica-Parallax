@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 150vh;
+}
+.container_main{
+    height: 100vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    perspective: 50px;
+}
+
+header {
+    position: relative;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.container_header{
+    display: grid;
+}
+
+.background {
+    /* Imagen Fondo */
+    transform: translateZ(-50px) scale(2);
+    background-image: url(./assets/abstract-luxury-soft-red-background-christmas-valentines-layout-design-studio-room-web-template-business-report-with-smooth-circle-gradient-color.jpg);
+}
+
+.foreground {
+    /* Imagen Medio */
+    background-image: url();
+    transform: translateZ(-25px) scale(1);
+    height: 20px;
+}
+.foreground,
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+
+.title {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin: 50px;
+}
+.subTitle {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 5px black;
+    margin: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position:fixed;
+    top: 0;
+}
+
+.nav_list {
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    padding: 10px;
+    color: azure;
+
+}
+
+.logo {
+    color: azure;
+    margin-left: 40px;
+}
